@@ -10,7 +10,7 @@ import {
   NativeBaseProvider,
 } from "native-base";
 
-const SingUp = () => {
+export const SingUp = ({ navigation }) => {
   return (
     <Center w="100%">
       <Box safeArea p="2" w="90%" maxW="290" py="8">
@@ -54,13 +54,5 @@ const SingUp = () => {
         </VStack>
       </Box>
     </Center>
-  );
-};
-
-export default () => {
-  return (
-    <NativeBaseProvider>
-      <SingUp />
-    </NativeBaseProvider>
   );
 };
