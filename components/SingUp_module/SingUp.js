@@ -48,7 +48,9 @@ export const SingUp = ({ navigation }) => {
             <FormControl.Label>Confirm Password</FormControl.Label>
             <Input type="password" />
           </FormControl>
-          <Button mt="2" colorScheme="indigo">
+          <Button mt="2" colorScheme="indigo" onPress={() => {
+                navigation.navigate("Login");
+              }}>
             Sign up
           </Button>
         </VStack>
